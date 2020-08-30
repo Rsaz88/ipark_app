@@ -1,0 +1,39 @@
+name: iparkapp
+description: A new Flutter application.
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  cupertino_icons: ^0.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+
+flutter:
+
+
+  uses-material-design: true
+
+  assets:
+    - assets/images/OP-11.PNG
+    - assets/images/OP-22.PNG
+    - assets/images/OP-33.PNG
+    - assets/images/OP-4.PNG
+    - assets/images/login.png
+    - assets/images/right.png
+    - assets/images/Twitter.png
+    - assets/images/password.png
+    - assets/images/camera.png
+
+
+
