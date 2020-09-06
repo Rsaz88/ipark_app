@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'BeHealer.dart';
 import 'HomePage.dart';
 import 'profile_page.dart';
 
@@ -69,21 +68,6 @@ class _NotifyState extends State<Notify> {
               ),
               title: Text(
                 'لدي مشكلة',
-              ),
-            ),
-            BottomNavigationBarItem(
-              icon: IconButton(
-                icon: Icon(Icons.pan_tool),
-                onPressed: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (context) => BeHealer(),
-                    ),
-                  );
-                },
-              ),
-              title: Text(
-                'أستطيع المساعدة',
               ),
             ),
             BottomNavigationBarItem(

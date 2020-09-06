@@ -38,8 +38,8 @@ class StartPage extends StatelessWidget {
                   end: Alignment.bottomRight,
                   stops: [0.3, 1],
                   colors: [
-                    Color(0xFF80D8FF),
-                    Color(0xFF00B0FF),
+                    Color(0xFFB0BEC5),
+                    Color(0xFF455a64),
                   ],
                 ),
                 borderRadius: BorderRadius.all(
@@ -49,7 +49,7 @@ class StartPage extends StatelessWidget {
               child: SizedBox.expand(
                 child: FlatButton(
                   child: Text(
-                    "دخول",
+                    "Login",
                     style: TextStyle(
                       fontWeight: FontWeight.w600,
                       fontFamily: 'Cairo-Regular',
@@ -77,15 +77,15 @@ class StartPage extends StatelessWidget {
               child: OutlineButton(
                 borderSide: BorderSide(
                   width: 2.0,
-                  color: Colors.lightBlueAccent,
+                  color: Colors.blueGrey,
                 ),
                 child: Text(
-                  "تسجيل",
+                  "Sign Up",
                   style: TextStyle(
                     fontSize: 15,
                     fontWeight: FontWeight.bold,
                     fontFamily: 'Cairo-Regular',
-                    color: Colors.black54,
+                    color: Colors.white,
                   ),
                 ),
                 onPressed: () {

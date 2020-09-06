@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'AddProblem.dart';
-import 'BeHealer.dart';
 import 'Notifications.dart';
 import 'profile_page.dart';
 
@@ -15,43 +14,31 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
-          primaryColor: Colors.lightBlueAccent[200],
-          accentColor: Colors.lightBlueAccent[200],
-          cursorColor: Colors.lightBlueAccent[200],
+          primaryColor: Colors.blueGrey[400],
+          accentColor: Colors.blueGrey[400],
+          cursorColor: Colors.blueGrey[400],
           textTheme: TextTheme(
             body1: TextStyle(
               fontSize: 10,
-              color: Colors.grey[700],
+              color: Colors.white70,
               fontWeight: FontWeight.bold,
-              fontFamily: 'Cairo-Regular',
             ),
           )),
       home: Scaffold(
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.white70,
         appBar: AppBar(
           title: Center(
             child: Text(
-              'The Healer ',
+              'IPark ',
               style: TextStyle(color: Colors.white),
             ),
           ),
         ),
         body: Container(
+          padding: EdgeInsets.fromLTRB(5, 50, 5, 0),
           child: GridView.count(
-            crossAxisCount: 2,
+            crossAxisCount: 3,
             children: <Widget>[
-              Container(),
-              Padding(
-                padding: EdgeInsets.fromLTRB(5, 30, 5, 3),
-                child: Text(
-                  ' الرجاء تحديد أحد المجالات التالية  ',
-                  style: TextStyle(
-                    fontSize: 16,
-                  ),
-                  textAlign: TextAlign.center,
-                ),
-              ),
-              Container(),
               Column(children: <Widget>[
                 IconButton(
                   icon: Icon(Icons.devices_other),
@@ -255,7 +242,7 @@ class _HomePageState extends State<HomePage> {
           items: [
             BottomNavigationBarItem(
               icon: IconButton(
-                icon: Icon(Icons.report_problem),
+                icon: Icon(Icons.home),
                 onPressed: () {
                   Navigator.of(context).push(
                     MaterialPageRoute(
@@ -265,22 +252,7 @@ class _HomePageState extends State<HomePage> {
                 },
               ),
               title: Text(
-                'لدي مشكلة',
-              ),
-            ),
-            BottomNavigationBarItem(
-              icon: IconButton(
-                icon: Icon(Icons.pan_tool),
-                onPressed: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (context) => BeHealer(),
-                    ),
-                  );
-                },
-              ),
-              title: Text(
-                'أستطيع المساعدة',
+                'Home',
               ),
             ),
             BottomNavigationBarItem(
@@ -295,7 +267,7 @@ class _HomePageState extends State<HomePage> {
                 },
               ),
               title: Text(
-                'التنبيهات',
+                'Notifications',
               ),
             ),
             BottomNavigationBarItem(
@@ -310,7 +282,7 @@ class _HomePageState extends State<HomePage> {
                 },
               ),
               title: Text(
-                'حسابي',
+                'MyProfile',
               ),
             ),
           ],

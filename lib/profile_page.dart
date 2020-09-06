@@ -4,9 +4,7 @@ import 'Edit_page.dart';
 import 'about_page.dart';
 import 'balance_page.dart';
 import 'dialogs.dart';
-import 'problem_page.dart';
 import 'chat_page.dart';
-import 'BeHealer.dart';
 import 'Notifications.dart';
 import 'HomePage.dart';
 
@@ -128,7 +126,7 @@ class _ProfileState extends State<Profile> {
                     color: Colors.white,
                     onPressed: () async {
                       final action = await Dialogs.yesAbortDialog(context,
-                          'نورة سعد', "هل انت متأكد من رغبتك في تسجيل الخروج؟");
+                          'Raghad ', "Are you Sure that you want sign out ?");
                     },
                   ),
                 ),
@@ -153,11 +151,10 @@ class _ProfileState extends State<Profile> {
                   ),
                   FlatButton(
                     child: Text(
-                      'مشكلاتي',
+                      'My Tickets',
                       style: TextStyle(
                         fontSize: 15,
                         color: Colors.grey[700],
-                        fontFamily: 'Cairo-Regular',
                       ),
                       textAlign: TextAlign.center,
                     ),
@@ -165,7 +162,7 @@ class _ProfileState extends State<Profile> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => Problem(),
+                          builder: (context) => HomePage(),
                         ),
                       );
                     },
@@ -177,11 +174,10 @@ class _ProfileState extends State<Profile> {
                   ),
                   FlatButton(
                     child: Text(
-                      'من نحن',
+                      'About IPark',
                       style: TextStyle(
                         fontSize: 15,
                         color: Colors.grey[700],
-                        fontFamily: 'Cairo-Regular',
                       ),
                       textAlign: TextAlign.center,
                     ),
@@ -210,7 +206,7 @@ class _ProfileState extends State<Profile> {
                   ),
                   FlatButton(
                     child: Text(
-                      'رصيدي',
+                      'My Balance',
                       style: TextStyle(
                         fontSize: 15,
                         color: Colors.grey[700],
@@ -234,7 +230,7 @@ class _ProfileState extends State<Profile> {
                   ),
                   FlatButton(
                     child: Text(
-                      'الرسائل',
+                      'Inbox',
                       style: TextStyle(
                         fontSize: 15,
                         color: Colors.grey[700],
@@ -278,21 +274,6 @@ class _ProfileState extends State<Profile> {
               ),
               title: Text(
                 'لدي مشكلة',
-              ),
-            ),
-            BottomNavigationBarItem(
-              icon: IconButton(
-                icon: Icon(Icons.pan_tool),
-                onPressed: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (context) => BeHealer(),
-                    ),
-                  );
-                },
-              ),
-              title: Text(
-                'أستطيع المساعدة',
               ),
             ),
             BottomNavigationBarItem(

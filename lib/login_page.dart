@@ -10,7 +10,7 @@ class loginPage extends StatelessWidget {
     // TODO: implement build
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.lightBlueAccent[200],
+        backgroundColor: Colors.blueGrey[400],
         leading: IconButton(
             icon: Icon(Icons.arrow_back),
             color: Colors.white,
@@ -23,10 +23,9 @@ class loginPage extends StatelessWidget {
               );
             }),
         title: Text(
-          'ادخل إلى حسابك',
+          'login to your account',
           style: TextStyle(
             fontWeight: FontWeight.w600,
-            fontFamily: 'Cairo-Regular',
             color: Colors.white,
             fontSize: 15,
           ),
@@ -38,7 +37,7 @@ class loginPage extends StatelessWidget {
           left: 40,
           right: 40,
         ),
-        color: Colors.white,
+        color: Colors.black87,
         child: ListView(
           children: <Widget>[
             SizedBox(
@@ -52,11 +51,10 @@ class loginPage extends StatelessWidget {
             TextFormField(
               keyboardType: TextInputType.emailAddress,
               decoration: InputDecoration(
-                  labelText: "البريد الإلكتروني",
+                  labelText: "E-mail",
                   labelStyle: TextStyle(
-                    color: Colors.black38,
+                    color: Colors.white70,
                     fontWeight: FontWeight.w600,
-                    fontFamily: 'Cairo-Regular',
                     fontSize: 15,
                   )),
             ),
@@ -67,11 +65,10 @@ class loginPage extends StatelessWidget {
               keyboardType: TextInputType.text,
               obscureText: true,
               decoration: InputDecoration(
-                  labelText: "كلمة المرور",
+                  labelText: "Password",
                   labelStyle: TextStyle(
-                    color: Colors.black38,
+                    color: Colors.white70,
                     fontWeight: FontWeight.w600,
-                    fontFamily: 'Cairo-Regular',
                     fontSize: 15,
                   )),
             ),
@@ -80,7 +77,7 @@ class loginPage extends StatelessWidget {
               alignment: Alignment.centerRight,
               child: FlatButton(
                 child: Text(
-                  "هل نسيت كلمة المرور؟",
+                  "Forget Password?",
                   style: TextStyle(
                     fontWeight: FontWeight.w600,
                     fontFamily: 'Cairo-Regular',
@@ -110,8 +107,8 @@ class loginPage extends StatelessWidget {
                     end: Alignment.bottomRight,
                     stops: [0.3, 1],
                     colors: [
-                      Color(0xFF9CD8F1),
-                      Color(0xFF00B0FF),
+                      Color(0xFFB0BEC5),
+                      Color(0xFF455a64),
                     ],
                   ),
                   borderRadius: BorderRadius.all(
@@ -129,7 +126,7 @@ class loginPage extends StatelessWidget {
                         ),
                       ),
                       Text(
-                        "دخول",
+                        "login",
                         style: TextStyle(
                           fontWeight: FontWeight.w600,
                           fontFamily: 'Cairo-Regular',
@@ -157,7 +154,7 @@ class loginPage extends StatelessWidget {
             Container(
               height: 60,
               decoration: BoxDecoration(
-                  color: Color(0xFF0091EA),
+                  color: Color(0xFF455a64),
                   borderRadius: BorderRadius.all(Radius.circular(5))),
               child: SizedBox.expand(
                 child: FlatButton(
@@ -171,7 +168,7 @@ class loginPage extends StatelessWidget {
                         ),
                       ),
                       Text(
-                        "الدخول عن طريق حسابك في تويتر",
+                        "Sign in using Twitter",
                         style: TextStyle(
                           fontWeight: FontWeight.w600,
                           fontFamily: 'Cairo-Regular',

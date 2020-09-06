@@ -8,7 +8,7 @@ class SignupPage extends StatelessWidget {
     // TODO: implement build
     return Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.lightBlueAccent[200],
+          backgroundColor: Colors.blueGrey[400],
           leading: IconButton(
               icon: Icon(Icons.arrow_back),
               color: Colors.white,
@@ -21,7 +21,7 @@ class SignupPage extends StatelessWidget {
                 );
               }),
           title: Text(
-            "ادخل بياناتك",
+            "Sign UP",
             style: TextStyle(
               fontWeight: FontWeight.w600,
               fontFamily: 'Cairo-Regular',
@@ -32,7 +32,7 @@ class SignupPage extends StatelessWidget {
         ),
         body: Container(
           padding: EdgeInsets.only(top: 20, left: 40, right: 40),
-          color: Colors.white,
+          color: Colors.black87,
           child: ListView(
             children: <Widget>[
               Container(
@@ -52,10 +52,10 @@ class SignupPage extends StatelessWidget {
               TextFormField(
                 keyboardType: TextInputType.text,
                 decoration: InputDecoration(
-                  prefixIcon: Icon(Icons.account_circle),
-                  labelText: "اسم المستخدم",
+                  prefixIcon: Icon(Icons.account_circle, color: Colors.white70),
+                  labelText: "Username",
                   labelStyle: TextStyle(
-                    color: Colors.black38,
+                    color: Colors.white70,
                     fontWeight: FontWeight.w600,
                     fontFamily: 'Cairo-Regular',
                     fontSize: 15,
@@ -71,10 +71,13 @@ class SignupPage extends StatelessWidget {
               TextFormField(
                 keyboardType: TextInputType.emailAddress,
                 decoration: InputDecoration(
-                  prefixIcon: Icon(Icons.email),
-                  labelText: "البريد الإلكتروني",
+                  prefixIcon: Icon(
+                    Icons.email,
+                    color: Colors.white70,
+                  ),
+                  labelText: "E-mail",
                   labelStyle: TextStyle(
-                    color: Colors.black38,
+                    color: Colors.white70,
                     fontWeight: FontWeight.w600,
                     fontFamily: 'Cairo-Regular',
                     fontSize: 15,
@@ -90,12 +93,11 @@ class SignupPage extends StatelessWidget {
               TextFormField(
                 keyboardType: TextInputType.text,
                 decoration: InputDecoration(
-                  prefixIcon: Icon(Icons.https),
-                  labelText: "كلمة المرور",
+                  prefixIcon: Icon(Icons.https, color: Colors.white70),
+                  labelText: "Password",
                   labelStyle: TextStyle(
-                    color: Colors.black38,
+                    color: Colors.white70,
                     fontWeight: FontWeight.w600,
-                    fontFamily: 'Cairo-Regular',
                     fontSize: 15,
                   ),
                 ),
@@ -109,10 +111,10 @@ class SignupPage extends StatelessWidget {
               TextFormField(
                 keyboardType: TextInputType.text,
                 decoration: InputDecoration(
-                  prefixIcon: Icon(Icons.https),
-                  labelText: "تأكيد كلمة المرور",
+                  prefixIcon: Icon(Icons.https, color: Colors.white70),
+                  labelText: "Confirm Password",
                   labelStyle: TextStyle(
-                    color: Colors.black38,
+                    color: Colors.white70,
                     fontWeight: FontWeight.w600,
                     fontFamily: 'Cairo-Regular',
                     fontSize: 15,
@@ -134,8 +136,8 @@ class SignupPage extends StatelessWidget {
                     end: Alignment.bottomRight,
                     stops: [0.3, 1],
                     colors: [
-                      Color(0xFF80D8FF),
-                      Color(0xFF00B0FF),
+                      Color(0xFF90A4AE),
+                      Color(0xFF455A64),
                     ],
                   ),
                   borderRadius: BorderRadius.all(
@@ -145,7 +147,7 @@ class SignupPage extends StatelessWidget {
                 child: SizedBox.expand(
                   child: FlatButton(
                     child: Text(
-                      "تسجيل",
+                      "SignUp",
                       style: TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.w600,

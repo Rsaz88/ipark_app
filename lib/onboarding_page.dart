@@ -42,21 +42,21 @@ class _OnboardingPageState extends State<OnboardingPage> {
             },
             children: <Widget>[
               _buildPageContent(
-                  image: 'assets/images/OP-11.PNG',
+                  image: 'assets/images/SP1.png',
                   title: 'Welcome to IPark !',
                   body:
                       'A park with unmatchable experience!                       based on AI where we take Entertainment to next level  ..  '),
               _buildPageContent(
-                  image: 'assets/images/OP-22.PNG',
+                  image: 'assets/images/SP2.png',
                   title: 'Safety is top periority ',
                   body:
                       ' IPark is the place where human safety and health come first ..'),
               _buildPageContent(
-                  image: 'assets/images/OP-33.PNG',
-                  title: 'Easy Payment & Refund ',
-                  body: ' Paying for tickets has never been easier ..'),
+                  image: 'assets/images/SP3.png',
+                  title: 'Unmatchable Experience ',
+                  body: ' The Future Of Entertaiment '),
               _buildPageContent(
-                  image: 'assets/images/OP-4.PNG',
+                  image: 'assets/images/SP4.PNG',
                   title: 'Family Friendly ',
                   body:
                       ' No matter what your age is .. You will diffenetly enjoy your time in IPark .. '),
@@ -104,7 +104,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
                           curve: Curves.linear);
                       setState(() {});
                     },
-                    splashColor: Colors.green,
+                    splashColor: Colors.blueGrey[400],
                     child: Text(
                       'Next',
                       style: TextStyle(

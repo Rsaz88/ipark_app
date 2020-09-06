@@ -25,10 +25,10 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/images/OP-11.PNG
-    - assets/images/OP-22.PNG
-    - assets/images/OP-33.PNG
-    - assets/images/OP-4.PNG
+    - assets/images/SP1.png
+    - assets/images/SP2.png
+    - assets/images/SP3.png
+    - assets/images/SP4.PNG
     - assets/images/login.png
     - assets/images/right.png
     - assets/images/Twitter.png
