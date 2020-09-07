@@ -7,9 +7,10 @@ class ResetPasswordPge extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
+      backgroundColor: Colors.black,
       appBar: AppBar(
-        backgroundColor: Colors.lightBlueAccent[200],
-        title: Text("استعادة كلمة المرور"),
+        backgroundColor: Colors.blueGrey,
+        title: Text("reset password"),
       ),
       body: Container(
         padding: EdgeInsets.only(
@@ -29,7 +30,7 @@ class ResetPasswordPge extends StatelessWidget {
               height: 20,
             ),
             Text(
-              "هل نسيت كلمة المرور؟",
+              "Forget Password?",
               style: TextStyle(
                 fontSize: 30,
                 fontWeight: FontWeight.w500,
@@ -40,7 +41,7 @@ class ResetPasswordPge extends StatelessWidget {
               height: 10,
             ),
             Text(
-              " يرجى إدخال البريد الإلكتروني لإنشاء كلمة مرور جديدة",
+              " Please Enter your Email",
               style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400),
               textAlign: TextAlign.center,
             ),
@@ -50,9 +51,9 @@ class ResetPasswordPge extends StatelessWidget {
             TextFormField(
               keyboardType: TextInputType.emailAddress,
               decoration: InputDecoration(
-                  labelText: "البريد الالكتروني",
+                  labelText: "Email",
                   labelStyle: TextStyle(
-                    color: Colors.black38,
+                    color: Colors.white70,
                     fontWeight: FontWeight.w400,
                     fontSize: 20,
                   )),
@@ -70,8 +71,8 @@ class ResetPasswordPge extends StatelessWidget {
                     end: Alignment.bottomRight,
                     stops: [0.3, 1],
                     colors: [
-                      Color(0xFF80D8FF),
-                      Color(0xFF00B0FF),
+                      Color(0xFFB0BEC5),
+                      Color(0xFF455a64),
                     ],
                   ),
                   borderRadius: BorderRadius.all(
@@ -80,7 +81,7 @@ class ResetPasswordPge extends StatelessWidget {
               child: SizedBox.expand(
                 child: FlatButton(
                   child: Text(
-                    "إرسال",
+                    "Send",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       color: Colors.white,

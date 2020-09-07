@@ -6,8 +6,9 @@ class Edit extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
+      backgroundColor: Colors.black,
       appBar: AppBar(
-          backgroundColor: Colors.lightBlueAccent[200],
+          backgroundColor: Colors.blueGrey,
           leading: IconButton(
             icon: Icon(Icons.arrow_back),
             color: Colors.white,
@@ -21,10 +22,9 @@ class Edit extends StatelessWidget {
             },
           ),
           title: Text(
-            "الإعدادات",
+            "Settings",
             style: TextStyle(
               color: Colors.white,
-              fontFamily: 'Cairo-Regular',
             ),
           )),
       body: SingleChildScrollView(
@@ -48,7 +48,7 @@ class Edit extends StatelessWidget {
                           decoration: BoxDecoration(
                             shape: BoxShape.circle,
                             border:
-                                Border.all(color: Colors.black26, width: 1.0),
+                                Border.all(color: Colors.white70, width: 1.0),
                           ),
                           padding: EdgeInsets.all(8.0),
                           child: CircleAvatar(
@@ -61,15 +61,14 @@ class Edit extends StatelessWidget {
                       height: 10,
                     ),
                     RaisedButton(
-                      color: Colors.lightBlue,
+                      color: Colors.blueGrey,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(30.0),
                       ),
                       child: Text(
-                        "اضافة صورة جديدة",
+                        "Add new picture",
                         style: TextStyle(
                           color: Colors.white,
-                          fontFamily: 'Cairo-Regular',
                           fontWeight: FontWeight.bold,
                         ),
                       ),
@@ -78,11 +77,10 @@ class Edit extends StatelessWidget {
                     TextFormField(
                       keyboardType: TextInputType.text,
                       decoration: InputDecoration(
-                        labelText: "تغيير الاسم",
+                        labelText: "Change Display Name",
                         labelStyle: TextStyle(
-                          color: Colors.black38,
+                          color: Colors.white70,
                           fontWeight: FontWeight.w400,
-                          fontFamily: 'Cairo-Regular',
                           fontSize: 20,
                         ),
                       ),
@@ -93,9 +91,9 @@ class Edit extends StatelessWidget {
                     TextFormField(
                       keyboardType: TextInputType.text,
                       decoration: InputDecoration(
-                        labelText: "ادخل كلمة المرور القديمة",
+                        labelText: "Enter Last Password",
                         labelStyle: TextStyle(
-                          color: Colors.black38,
+                          color: Colors.white70,
                           fontWeight: FontWeight.w400,
                           fontSize: 20,
                           fontFamily: 'Cairo-Regular',
@@ -108,12 +106,11 @@ class Edit extends StatelessWidget {
                     TextFormField(
                       keyboardType: TextInputType.text,
                       decoration: InputDecoration(
-                        labelText: "ادخل كلمة المرور الجديدة",
+                        labelText: "Enter New Password",
                         labelStyle: TextStyle(
-                          color: Colors.black38,
+                          color: Colors.white70,
                           fontWeight: FontWeight.w400,
                           fontSize: 20,
-                          fontFamily: 'Cairo-Regular',
                         ),
                       ),
                     ),
@@ -121,15 +118,14 @@ class Edit extends StatelessWidget {
                       height: 30,
                     ),
                     RaisedButton(
-                      color: Colors.lightBlue,
+                      color: Colors.blueGrey,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(30.0),
                       ),
                       child: Text(
-                        "حفظ",
+                        "Save",
                         style: TextStyle(
                           color: Colors.white,
-                          fontFamily: 'Cairo-Regular',
                           fontWeight: FontWeight.bold,
                         ),
                       ),

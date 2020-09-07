@@ -6,8 +6,9 @@ class chat extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
+      backgroundColor: Colors.black,
       appBar: AppBar(
-        backgroundColor: Colors.lightBlueAccent[200],
+        backgroundColor: Colors.blueGrey,
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
           color: Colors.white,

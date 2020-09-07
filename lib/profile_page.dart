@@ -19,9 +19,9 @@ class _ProfileState extends State<Profile> {
     // TODO: implement build
     return MaterialApp(
       theme: ThemeData(
-          primaryColor: Colors.lightBlueAccent[200],
-          accentColor: Colors.lightBlueAccent[200],
-          cursorColor: Colors.lightBlueAccent[200],
+          primaryColor: Colors.blueGrey,
+          accentColor: Colors.blueGrey,
+          cursorColor: Colors.blueGrey,
           fontFamily: 'Cairo-Regular',
           textTheme: TextTheme(
             body1: TextStyle(
@@ -32,14 +32,15 @@ class _ProfileState extends State<Profile> {
             ),
           )),
       home: Scaffold(
+        backgroundColor: Colors.black,
         body: Container(
           child: Stack(
             children: <Widget>[
               Container(
                 decoration: BoxDecoration(
                     gradient: LinearGradient(colors: [
-                  Color(0xFF80D8FF),
-                  Color(0xFF00B0FF),
+                  Color(0xFFB0BEC5),
+                  Color(0xFF455a64),
                 ])),
               ),
               Padding(
@@ -67,7 +68,7 @@ class _ProfileState extends State<Profile> {
                     ),
                     SizedBox(height: 8.0),
                     Text(
-                      "نورة سعد",
+                      "Raghad",
                       style: TextStyle(
                         fontSize: 20.0,
                         fontFamily: 'Cairo-Regular',
@@ -77,7 +78,7 @@ class _ProfileState extends State<Profile> {
                       textAlign: TextAlign.center,
                     ),
                     Text(
-                      "@1419_Nourah",
+                      "@1419_Raghad",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 15.0,
@@ -99,9 +100,8 @@ class _ProfileState extends State<Profile> {
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(30.0)),
                       child: Text(
-                        "الإعدادات",
+                        "Settings",
                         style: TextStyle(
-                          fontFamily: 'Cairo-Regular',
                           fontSize: 13.0,
                           color: Colors.white,
                         ),
@@ -122,7 +122,10 @@ class _ProfileState extends State<Profile> {
                   ),
                   padding: EdgeInsets.all(8.0),
                   child: IconButton(
-                    icon: Icon(Icons.exit_to_app),
+                    icon: Icon(
+                      Icons.exit_to_app,
+                      color: Colors.blueGrey[200],
+                    ),
                     color: Colors.white,
                     onPressed: () async {
                       final action = await Dialogs.yesAbortDialog(context,
@@ -134,7 +137,7 @@ class _ProfileState extends State<Profile> {
               Container(
                 margin: EdgeInsets.only(top: 320.0),
                 decoration: BoxDecoration(
-                  color: Colors.white,
+                  color: Colors.black87,
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(20.0),
                     topRight: Radius.circular(20.0),
@@ -147,14 +150,14 @@ class _ProfileState extends State<Profile> {
                   Icon(
                     Icons.content_paste,
                     size: 60,
-                    color: Colors.black12,
+                    color: Colors.blueGrey[300],
                   ),
                   FlatButton(
                     child: Text(
                       'My Tickets',
                       style: TextStyle(
                         fontSize: 15,
-                        color: Colors.grey[700],
+                        color: Colors.white70,
                       ),
                       textAlign: TextAlign.center,
                     ),
@@ -170,14 +173,14 @@ class _ProfileState extends State<Profile> {
                   Icon(
                     Icons.help_outline,
                     size: 60,
-                    color: Colors.black12,
+                    color: Colors.blueGrey[300],
                   ),
                   FlatButton(
                     child: Text(
                       'About IPark',
                       style: TextStyle(
                         fontSize: 15,
-                        color: Colors.grey[700],
+                        color: Colors.white70,
                       ),
                       textAlign: TextAlign.center,
                     ),
@@ -202,15 +205,14 @@ class _ProfileState extends State<Profile> {
                   Icon(
                     Icons.attach_money,
                     size: 60,
-                    color: Colors.black12,
+                    color: Colors.blueGrey[300],
                   ),
                   FlatButton(
                     child: Text(
                       'My Balance',
                       style: TextStyle(
                         fontSize: 15,
-                        color: Colors.grey[700],
-                        fontFamily: 'Cairo-Regular',
+                        color: Colors.white70,
                       ),
                       textAlign: TextAlign.center,
                     ),
@@ -226,15 +228,14 @@ class _ProfileState extends State<Profile> {
                   Icon(
                     Icons.chat,
                     size: 60,
-                    color: Colors.black12,
+                    color: Colors.blueGrey[300],
                   ),
                   FlatButton(
                     child: Text(
                       'Inbox',
                       style: TextStyle(
                         fontSize: 15,
-                        color: Colors.grey[700],
-                        fontFamily: 'Cairo-Regular',
+                        color: Colors.white70,
                       ),
                       textAlign: TextAlign.center,
                     ),
@@ -253,17 +254,17 @@ class _ProfileState extends State<Profile> {
           ),
         ),
         bottomNavigationBar: BottomNavigationBar(
-          currentIndex: 3,
+          currentIndex: 2,
           iconSize: 20,
           selectedFontSize: 10,
           unselectedFontSize: 10,
-          selectedItemColor: Color(0xFFfebf01),
+          selectedItemColor: Colors.white70,
           type: BottomNavigationBarType.fixed,
-          backgroundColor: Color.fromARGB(250, 232, 234, 235),
+          backgroundColor: Color.fromARGB(250, 163, 186, 194),
           items: [
             BottomNavigationBarItem(
               icon: IconButton(
-                icon: Icon(Icons.report_problem),
+                icon: Icon(Icons.home),
                 onPressed: () {
                   Navigator.of(context).push(
                     MaterialPageRoute(
@@ -273,7 +274,7 @@ class _ProfileState extends State<Profile> {
                 },
               ),
               title: Text(
-                'لدي مشكلة',
+                'Home',
               ),
             ),
             BottomNavigationBarItem(
@@ -288,12 +289,14 @@ class _ProfileState extends State<Profile> {
                 },
               ),
               title: Text(
-                'التنبيهات',
+                'Notifications',
               ),
             ),
             BottomNavigationBarItem(
               icon: IconButton(
-                icon: Icon(Icons.person),
+                icon: Icon(
+                  Icons.person,
+                ),
                 onPressed: () {
                   Navigator.of(context).push(
                     MaterialPageRoute(
@@ -303,7 +306,7 @@ class _ProfileState extends State<Profile> {
                 },
               ),
               title: Text(
-                'حسابي',
+                'MyProfile',
               ),
             ),
           ],

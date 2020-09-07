@@ -6,8 +6,9 @@ class about extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
+      backgroundColor: Colors.black,
       appBar: AppBar(
-        backgroundColor: Colors.lightBlueAccent[200],
+        backgroundColor: Colors.blueGrey,
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
           color: Colors.white,
@@ -21,10 +22,9 @@ class about extends StatelessWidget {
           },
         ),
         title: Text(
-          "من نحن ؟",
+          "About IPark ",
           style: TextStyle(
             color: Colors.white,
-            fontFamily: 'Cairo-Regular',
           ),
         ),
       ),
@@ -37,9 +37,9 @@ class about extends StatelessWidget {
         child: Column(
           children: <Widget>[
             Text(
-              'من نحن ؟',
+              'About IPark ',
               style: TextStyle(
-                color: Colors.black54,
+                color: Colors.blueGrey[200],
                 fontFamily: 'Cairo-Regular',
                 fontSize: 30,
                 fontWeight: FontWeight.bold,
@@ -50,9 +50,9 @@ class about extends StatelessWidget {
               height: 15,
             ),
             Text(
-              "يهدف تطبيقنا لمساعدتك في طرح  مشكلتك من خلال نص او صورة او مقطع فيديو او صوت وتحديد المجال المناسب ثم ستكون متصلاً بمجموعة من المعالجين ( الأشخاص الذين سيساعدونك ) وسوف يكون لك الحرية في اختيار المعالج المناسب لك و سيساعدك على حل المشكلة خطوة بخطوة ، يمكنك ايضا اختيار معالج يمكنه مساعدتك عبر الإنترنت أو محليًا عن طريق تحديد موقعك باستخدام GPS  ",
+              'Our Solution called IPark which stands for Intelligent Park will provide variety of entertainment solutions',
               style: TextStyle(
-                color: Colors.black38,
+                color: Colors.white70,
                 fontFamily: 'Cairo-Regular',
                 fontSize: 18,
                 fontWeight: FontWeight.bold,

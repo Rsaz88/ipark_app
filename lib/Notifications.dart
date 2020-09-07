@@ -12,9 +12,9 @@ class _NotifyState extends State<Notify> {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
-          primaryColor: Colors.lightBlueAccent[200],
-          accentColor: Colors.lightBlueAccent[200],
-          cursorColor: Colors.lightBlueAccent[200],
+          primaryColor: Colors.blueGrey,
+          accentColor: Colors.blueGrey,
+          cursorColor: Colors.blueGrey,
           textTheme: TextTheme(
             body1: TextStyle(
               fontSize: 10,
@@ -24,8 +24,9 @@ class _NotifyState extends State<Notify> {
             ),
           )),
       home: Scaffold(
+        backgroundColor: Colors.black,
         appBar: AppBar(
-          backgroundColor: Colors.lightBlueAccent[200],
+          backgroundColor: Colors.blueGrey,
           title: Center(
             child: Text(
               'The Healer ',
@@ -36,7 +37,7 @@ class _NotifyState extends State<Notify> {
         body: Container(
             child: Center(
           child: Text(
-            "عذراً .. لا يوجد لديك أي اشعارات حالياً",
+            "No New Notifications ",
             style: TextStyle(
               fontWeight: FontWeight.w600,
               fontFamily: 'Cairo-Regular',
@@ -47,17 +48,17 @@ class _NotifyState extends State<Notify> {
           ),
         )),
         bottomNavigationBar: BottomNavigationBar(
-          currentIndex: 2,
+          currentIndex: 1,
           iconSize: 20,
           selectedFontSize: 10,
           unselectedFontSize: 10,
-          selectedItemColor: Color(0xFFfebf01),
+          selectedItemColor: Colors.white70,
           type: BottomNavigationBarType.fixed,
-          backgroundColor: Color.fromARGB(250, 232, 234, 235),
+          backgroundColor: Color.fromARGB(250, 163, 186, 194),
           items: [
             BottomNavigationBarItem(
               icon: IconButton(
-                icon: Icon(Icons.report_problem),
+                icon: Icon(Icons.home),
                 onPressed: () {
                   Navigator.of(context).push(
                     MaterialPageRoute(
@@ -67,7 +68,7 @@ class _NotifyState extends State<Notify> {
                 },
               ),
               title: Text(
-                'لدي مشكلة',
+                'Home',
               ),
             ),
             BottomNavigationBarItem(
@@ -82,7 +83,7 @@ class _NotifyState extends State<Notify> {
                 },
               ),
               title: Text(
-                'التنبيهات',
+                'Notifications',
               ),
             ),
             BottomNavigationBarItem(
@@ -97,7 +98,7 @@ class _NotifyState extends State<Notify> {
                 },
               ),
               title: Text(
-                'حسابي',
+                'MyProfile',
               ),
             ),
           ],

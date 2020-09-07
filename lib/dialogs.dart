@@ -38,24 +38,21 @@ class Dialogs {
               FlatButton(
                 onPressed: () => Navigator.of(context).pop(DialogAction.abort),
                 child: const Text(
-                  "إلغاء",
-                  style: TextStyle(
-                    fontFamily: 'Cairo-Regular',
-                  ),
+                  "Cancel",
+                  style: TextStyle(),
                 ),
               ),
               RaisedButton(
-                color: Colors.lightBlue,
+                color: Colors.blueGrey,
                 onPressed: () => Navigator.of(context).push(
                   MaterialPageRoute(
                     builder: (context) => StartPage(),
                   ),
                 ),
                 child: const Text(
-                  "تسجيل الخروج",
+                  "Sign Out",
                   style: TextStyle(
                     color: Colors.white,
-                    fontFamily: 'Cairo-Regular',
                   ),
                 ),
               )

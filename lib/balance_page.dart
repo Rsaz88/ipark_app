@@ -7,8 +7,9 @@ class balance extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
+      backgroundColor: Colors.black,
       appBar: AppBar(
-          backgroundColor: Colors.lightBlueAccent[200],
+          backgroundColor: Colors.blueGrey,
           leading: IconButton(
             icon: Icon(Icons.arrow_back),
             color: Colors.white,
@@ -22,10 +23,9 @@ class balance extends StatelessWidget {
             },
           ),
           title: Text(
-            "رصيدي",
+            "My balance",
             style: TextStyle(
               color: Colors.white,
-              fontFamily: 'Cairo-Regular',
             ),
           )),
       body: Container(
@@ -34,16 +34,16 @@ class balance extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              "يجب تفعيل حسابك في",
+              "You need to activate",
               style: TextStyle(
                 fontSize: 28,
-                color: Colors.black12,
+                color: Colors.white70,
                 fontFamily: 'Cairo-Regular',
                 fontWeight: FontWeight.bold,
               ),
             ),
             Text(
-              "Apple pay او Google pay",
+              "Apple pay or Google pay",
               style: TextStyle(
                 fontSize: 25,
                 color: Colors.black12,
@@ -55,7 +55,7 @@ class balance extends StatelessWidget {
               height: 15,
             ),
             RaisedButton(
-              color: Colors.lightBlue,
+              color: Colors.blueGrey,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(30.0),
               ),
@@ -74,7 +74,7 @@ class balance extends StatelessWidget {
               height: 15,
             ),
             RaisedButton(
-              color: Colors.black12,
+              color: Colors.white70,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(30.0),
               ),
